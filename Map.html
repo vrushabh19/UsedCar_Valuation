@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c39f76f5256d474d845ef919638562aa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c39f76f5256d474d845ef919638562aa" ></div>
+        
+</body>
+<script>    
+    
+            var map_c39f76f5256d474d845ef919638562aa = L.map(
+                "map_c39f76f5256d474d845ef919638562aa",
+                {
+                    center: [39.33699860995735, -98.42457180194508],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_13ef1f7afeb24f46907d90008a2fbf3a = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+            var circle_marker_33ed1b5d137a4875b73ac103fbf6864d = L.circleMarker(
+                [32.59, -85.48],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.433333333333334, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_1a04f9c70e63482cb54f19b3842568e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb2f15cf6b374e93bcb8ed7acbff5c42 = $(`<div id="html_eb2f15cf6b374e93bcb8ed7acbff5c42" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Alabama<br><strong> Region: </strong>Auburn<br><strong> Count: </strong>133<br></div>`)[0];
+            popup_1a04f9c70e63482cb54f19b3842568e4.setContent(html_eb2f15cf6b374e93bcb8ed7acbff5c42);
+        
+
+        circle_marker_33ed1b5d137a4875b73ac103fbf6864d.bindPopup(popup_1a04f9c70e63482cb54f19b3842568e4)
+        ;
+
+        
+    
+    
+            var circle_marker_6f9bddc0c594495f89e40d174879487d = L.circleMarker(
+                [33.52, -86.79],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 37.06666666666667, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_581aeed9fdf14e16aefba3af2063b8df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_780e812ef8b74f329baa80d1a34144c9 = $(`<div id="html_780e812ef8b74f329baa80d1a34144c9" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Alabama<br><strong> Region: </strong>Birmingham<br><strong> Count: </strong>1112<br></div>`)[0];
+            popup_581aeed9fdf14e16aefba3af2063b8df.setContent(html_780e812ef8b74f329baa80d1a34144c9);
+        
+
+        circle_marker_6f9bddc0c594495f89e40d174879487d.bindPopup(popup_581aeed9fdf14e16aefba3af2063b8df)
+        ;
+
+        
+    
+    
+            var circle_marker_b4d9f9049ae0403998dc7683e602a1cb = L.circleMarker(
+                [31.23, -85.4],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_d15de0d25b9f4d6d9eda2cab14187a5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a17b2a876f7c4be4b5fdbd6e11c41a8c = $(`<div id="html_a17b2a876f7c4be4b5fdbd6e11c41a8c" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Alabama<br><strong> Region: </strong>Dothan<br><strong> Count: </strong>290<br></div>`)[0];
+            popup_d15de0d25b9f4d6d9eda2cab14187a5b.setContent(html_a17b2a876f7c4be4b5fdbd6e11c41a8c);
+        
+
+        circle_marker_b4d9f9049ae0403998dc7683e602a1cb.bindPopup(popup_d15de0d25b9f4d6d9eda2cab14187a5b)
+        ;
+
+        
+    
+    
+            var circle_marker_35f8008d5db141599ec4d51833c553ff = L.circleMarker(
+                [33.779214, -84.411811],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.033333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_e54cb2a686bc4e14881537a46dbf1f9e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3d704273bf9445986ce6683ed9da689 = $(`<div id="html_e3d704273bf9445986ce6683ed9da689" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Alabama<br><strong> Region: </strong>Florence / muscle shoals<br><strong> Count: </strong>151<br></div>`)[0];
+            popup_e54cb2a686bc4e14881537a46dbf1f9e.setContent(html_e3d704273bf9445986ce6683ed9da689);
+        
+
+        circle_marker_35f8008d5db141599ec4d51833c553ff.bindPopup(popup_e54cb2a686bc4e14881537a46dbf1f9e)
+        ;
+
+        
+    
+    
+            var circle_marker_4e4f202db87546feb9bb53d615ad1270 = L.circleMarker(
+                [34.01, -86.01],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.466666666666667, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_72b322be4435498ca43c5b9d0041c52b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94f6df9bc52b43c097035b6acadfbf41 = $(`<div id="html_94f6df9bc52b43c097035b6acadfbf41" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Alabama<br><strong> Region: </strong>Gadsden-anniston<br><strong> Count: </strong>164<br></div>`)[0];
+            popup_72b322be4435498ca43c5b9d0041c52b.setContent(html_94f6df9bc52b43c097035b6acadfbf41);
+        
+
+        circle_marker_4e4f202db87546feb9bb53d615ad1270.bindPopup(popup_72b322be4435498ca43c5b9d0041c52b)
+        ;
+
+        
+    
+    
+            var circle_marker_a161fac157ac44878c37e713b4e82130 = L.circleMarker(
+                [34.57, -86.98],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 35.2, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_716c61e8198f448a83b7ea359d2d4f5c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d70be69178e4db88fe5bdd84aa493a2 = $(`<div id="html_4d70be69178e4db88fe5bdd84aa493a2" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Alabama<br><strong> Region: </strong>Huntsville / decatur<br><strong> Count: </strong>1056<br></div>`)[0];
+            popup_716c61e8198f448a83b7ea359d2d4f5c.setContent(html_4d70be69178e4db88fe5bdd84aa493a2);
+        
+
+        circle_marker_a161fac157ac44878c37e713b4e82130.bindPopup(popup_716c61e8198f448a83b7ea359d2d4f5c)
+        ;
+
+        
+    
+    
+            var circle_marker_1e2597968abf44b0a974a9a67dc5b8f6 = L.circleMarker(
+                [30.668786, -88.105874],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.933333333333334, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_a8468affa3394296b2c3bbcb0ef29061 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c89d514ca2ba40febb6b76713ff3218b = $(`<div id="html_c89d514ca2ba40febb6b76713ff3218b" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Alabama<br><strong> Region: </strong>Mobile<br><strong> Count: </strong>478<br></div>`)[0];
+            popup_a8468affa3394296b2c3bbcb0ef29061.setContent(html_c89d514ca2ba40febb6b76713ff3218b);
+        
+
+        circle_marker_1e2597968abf44b0a974a9a67dc5b8f6.bindPopup(popup_a8468affa3394296b2c3bbcb0ef29061)
+        ;
+
+        
+    
+    
+            var circle_marker_8df5a43d961f462297824e43ada9ea07 = L.circleMarker(
+                [32.35, -86.28],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.8, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_e4f26896e39e42ca93d074320fff1096 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce4127e3184b4957ac18251b2c2fa791 = $(`<div id="html_ce4127e3184b4957ac18251b2c2fa791" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Alabama<br><strong> Region: </strong>Montgomery<br><strong> Count: </strong>324<br></div>`)[0];
+            popup_e4f26896e39e42ca93d074320fff1096.setContent(html_ce4127e3184b4957ac18251b2c2fa791);
+        
+
+        circle_marker_8df5a43d961f462297824e43ada9ea07.bindPopup(popup_e4f26896e39e42ca93d074320fff1096)
+        ;
+
+        
+    
+    
+            var circle_marker_363e9965bfe148298c098123018f2bf6 = L.circleMarker(
+                [33.23, -87.54],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_0c441ec9a69e4e47895c1de39fde9017 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3161d71d412846fc99e97f16be8f0794 = $(`<div id="html_3161d71d412846fc99e97f16be8f0794" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Alabama<br><strong> Region: </strong>Tuscaloosa<br><strong> Count: </strong>150<br></div>`)[0];
+            popup_0c441ec9a69e4e47895c1de39fde9017.setContent(html_3161d71d412846fc99e97f16be8f0794);
+        
+
+        circle_marker_363e9965bfe148298c098123018f2bf6.bindPopup(popup_0c441ec9a69e4e47895c1de39fde9017)
+        ;
+
+        
+    
+    
+            var circle_marker_09399497aea7481f80923c0ec19e6b93 = L.circleMarker(
+                [61.16167, -149.86312],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 52.46666666666667, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_f938a6ea55314bb79fb930da207dd885 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd71951ceef14a8198b96921d3de9df3 = $(`<div id="html_bd71951ceef14a8198b96921d3de9df3" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Alaska<br><strong> Region: </strong>Anchorage / mat-su<br><strong> Count: </strong>1574<br></div>`)[0];
+            popup_f938a6ea55314bb79fb930da207dd885.setContent(html_bd71951ceef14a8198b96921d3de9df3);
+        
+
+        circle_marker_09399497aea7481f80923c0ec19e6b93.bindPopup(popup_f938a6ea55314bb79fb930da207dd885)
+        ;
+
+        
+    
+    
+            var circle_marker_bd175703b611481abed5599c33bb17ca = L.circleMarker(
+                [64.81552, -147.71293],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_c59507594bef419090be71ea394d5982 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6583bb711d04f84bd5a491cb4582506 = $(`<div id="html_c6583bb711d04f84bd5a491cb4582506" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Alaska<br><strong> Region: </strong>Fairbanks<br><strong> Count: </strong>270<br></div>`)[0];
+            popup_c59507594bef419090be71ea394d5982.setContent(html_c6583bb711d04f84bd5a491cb4582506);
+        
+
+        circle_marker_bd175703b611481abed5599c33bb17ca.bindPopup(popup_c59507594bef419090be71ea394d5982)
+        ;
+
+        
+    
+    
+            var circle_marker_654a651b83d3479ea31266b5c938a456 = L.circleMarker(
+                [61.1381, -149.86727],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.666666666666667, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_1a44ad7ea88e4277a1863135028ba379 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de8d9f46058d4d45a927654827b662fd = $(`<div id="html_de8d9f46058d4d45a927654827b662fd" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Alaska<br><strong> Region: </strong>Kenai peninsula<br><strong> Count: </strong>140<br></div>`)[0];
+            popup_1a44ad7ea88e4277a1863135028ba379.setContent(html_de8d9f46058d4d45a927654827b662fd);
+        
+
+        circle_marker_654a651b83d3479ea31266b5c938a456.bindPopup(popup_1a44ad7ea88e4277a1863135028ba379)
+        ;
+
+        
+    
+    
+            var circle_marker_a1ea7f95452b45c687cc27599600b7e8 = L.circleMarker(
+                [58.3628, -134.5294],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.6, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_67e01459b38a41aeb09f79c7a9bf6172 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de7feb8dc2a74946887bcfe1dad65363 = $(`<div id="html_de7feb8dc2a74946887bcfe1dad65363" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Alaska<br><strong> Region: </strong>Southeast alaska<br><strong> Count: </strong>78<br></div>`)[0];
+            popup_67e01459b38a41aeb09f79c7a9bf6172.setContent(html_de7feb8dc2a74946887bcfe1dad65363);
+        
+
+        circle_marker_a1ea7f95452b45c687cc27599600b7e8.bindPopup(popup_67e01459b38a41aeb09f79c7a9bf6172)
+        ;
+
+        
+    
+    
+            var circle_marker_4e469bb2b6684c01983d21b43b2333c3 = L.circleMarker(
+                [33.7865, -84.4454],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.966666666666665, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_73c69496c4994952810a2e63d3bdcfd6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c007a6c6ce44befb9ee6a46bef95734 = $(`<div id="html_5c007a6c6ce44befb9ee6a46bef95734" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Arizona<br><strong> Region: </strong>Flagstaff / sedona<br><strong> Count: </strong>629<br></div>`)[0];
+            popup_73c69496c4994952810a2e63d3bdcfd6.setContent(html_5c007a6c6ce44befb9ee6a46bef95734);
+        
+
+        circle_marker_4e469bb2b6684c01983d21b43b2333c3.bindPopup(popup_73c69496c4994952810a2e63d3bdcfd6)
+        ;
+
+        
+    
+    
+            var circle_marker_aefec3b93c9c4fd8b3ba1d0bd0e75c9f = L.circleMarker(
+                [34.4228, -114.125],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.433333333333334, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_e7e6c26a774946cd9f9b83477d7f4873 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1cc572bd83874c97b6c15364d1710283 = $(`<div id="html_1cc572bd83874c97b6c15364d1710283" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Arizona<br><strong> Region: </strong>Mohave county<br><strong> Count: </strong>313<br></div>`)[0];
+            popup_e7e6c26a774946cd9f9b83477d7f4873.setContent(html_1cc572bd83874c97b6c15364d1710283);
+        
+
+        circle_marker_aefec3b93c9c4fd8b3ba1d0bd0e75c9f.bindPopup(popup_e7e6c26a774946cd9f9b83477d7f4873)
+        ;
+
+        
+    
+    
+            var circle_marker_3803b8dd1125440d907587bc083f9110 = L.circleMarker(
+                [33.44, -111.8],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 76.26666666666667, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_2e8c19b3f92a4ef9949a7c9d777eb320 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c7da14f1e9c4c8ea887bb4adb9978a1 = $(`<div id="html_1c7da14f1e9c4c8ea887bb4adb9978a1" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Arizona<br><strong> Region: </strong>Phoenix<br><strong> Count: </strong>2288<br></div>`)[0];
+            popup_2e8c19b3f92a4ef9949a7c9d777eb320.setContent(html_1c7da14f1e9c4c8ea887bb4adb9978a1);
+        
+
+        circle_marker_3803b8dd1125440d907587bc083f9110.bindPopup(popup_2e8c19b3f92a4ef9949a7c9d777eb320)
+        ;
+
+        
+    
+    
+            var circle_marker_517f6d6e168b46518c32fbfc72b0ae1f = L.circleMarker(
+                [34.62, -112.42],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.8, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_fb273af8f50843de845f4993fb0ddee5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2d9e98ed0434f8091ebca626643df94 = $(`<div id="html_a2d9e98ed0434f8091ebca626643df94" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Arizona<br><strong> Region: </strong>Prescott<br><strong> Count: </strong>564<br></div>`)[0];
+            popup_fb273af8f50843de845f4993fb0ddee5.setContent(html_a2d9e98ed0434f8091ebca626643df94);
+        
+
+        circle_marker_517f6d6e168b46518c32fbfc72b0ae1f.bindPopup(popup_fb273af8f50843de845f4993fb0ddee5)
+        ;
+
+        
+    
+    
+            var circle_marker_fed2b57ee3f34137a9cd4d5e0f076437 = L.circleMarker(
+                [34.2998, -110.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.466666666666667, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_6896ab2fc88f44159079a3429a28400c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a718f9e2aac4074b9b9119b3dfa7a48 = $(`<div id="html_8a718f9e2aac4074b9b9119b3dfa7a48" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Arizona<br><strong> Region: </strong>Show low<br><strong> Count: </strong>74<br></div>`)[0];
+            popup_6896ab2fc88f44159079a3429a28400c.setContent(html_8a718f9e2aac4074b9b9119b3dfa7a48);
+        
+
+        circle_marker_fed2b57ee3f34137a9cd4d5e0f076437.bindPopup(popup_6896ab2fc88f44159079a3429a28400c)
+        ;
+
+        
+    
+    
+            var circle_marker_dacee090489f4046baa9777e4d1da9bf = L.circleMarker(
+                [31.59, -110.17],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.533333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_6953991c5059488db96439d89e090870 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a348d2b54ab430d882236fb5679e65d = $(`<div id="html_5a348d2b54ab430d882236fb5679e65d" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Arizona<br><strong> Region: </strong>Sierra vista<br><strong> Count: </strong>226<br></div>`)[0];
+            popup_6953991c5059488db96439d89e090870.setContent(html_5a348d2b54ab430d882236fb5679e65d);
+        
+
+        circle_marker_dacee090489f4046baa9777e4d1da9bf.bindPopup(popup_6953991c5059488db96439d89e090870)
+        ;
+
+        
+    
+    
+            var circle_marker_5c068901c5884fcf86423f1f1f94c3c1 = L.circleMarker(
+                [32.21, -110.96],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 74.4, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_3115c03f02364c2cbd7f006bf235c354 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4d172db8a95423ebbaada6415ed781c = $(`<div id="html_d4d172db8a95423ebbaada6415ed781c" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Arizona<br><strong> Region: </strong>Tucson<br><strong> Count: </strong>2232<br></div>`)[0];
+            popup_3115c03f02364c2cbd7f006bf235c354.setContent(html_d4d172db8a95423ebbaada6415ed781c);
+        
+
+        circle_marker_5c068901c5884fcf86423f1f1f94c3c1.bindPopup(popup_3115c03f02364c2cbd7f006bf235c354)
+        ;
+
+        
+    
+    
+            var circle_marker_37d693ab01454c25b27d13d6057d3afa = L.circleMarker(
+                [33.396353, -111.954863],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.466666666666667, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_ab4ba0b3a53645ea99691ab187d5da93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5c498f95df54c73b6bc6c564f1dc8f4 = $(`<div id="html_e5c498f95df54c73b6bc6c564f1dc8f4" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Arizona<br><strong> Region: </strong>Yuma<br><strong> Count: </strong>224<br></div>`)[0];
+            popup_ab4ba0b3a53645ea99691ab187d5da93.setContent(html_e5c498f95df54c73b6bc6c564f1dc8f4);
+        
+
+        circle_marker_37d693ab01454c25b27d13d6057d3afa.bindPopup(popup_ab4ba0b3a53645ea99691ab187d5da93)
+        ;
+
+        
+    
+    
+            var circle_marker_ddf3a8dc356f4f749691fa2d6317aec9 = L.circleMarker(
+                [38.4018, -93.785],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.0, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_6bdb733c34254c34817fb78757866fc4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d44b9860f8c84e1fad53c342ac6af5e4 = $(`<div id="html_d44b9860f8c84e1fad53c342ac6af5e4" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Arkansas<br><strong> Region: </strong>Fayetteville<br><strong> Count: </strong>810<br></div>`)[0];
+            popup_6bdb733c34254c34817fb78757866fc4.setContent(html_d44b9860f8c84e1fad53c342ac6af5e4);
+        
+
+        circle_marker_ddf3a8dc356f4f749691fa2d6317aec9.bindPopup(popup_6bdb733c34254c34817fb78757866fc4)
+        ;
+
+        
+    
+    
+            var circle_marker_d208cb20c18d4a8fb59ac183c6d7a291 = L.circleMarker(
+                [35.2204, -97.4577],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.566666666666666, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_3d2d2738e4e14058a47b80941d9717c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f72bf3a110b424faaceddcbe5884be9 = $(`<div id="html_7f72bf3a110b424faaceddcbe5884be9" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Arkansas<br><strong> Region: </strong>Fort smith<br><strong> Count: </strong>167<br></div>`)[0];
+            popup_3d2d2738e4e14058a47b80941d9717c8.setContent(html_7f72bf3a110b424faaceddcbe5884be9);
+        
+
+        circle_marker_d208cb20c18d4a8fb59ac183c6d7a291.bindPopup(popup_3d2d2738e4e14058a47b80941d9717c8)
+        ;
+
+        
+    
+    
+            var circle_marker_9d29d1e2419d405a85d35343752e2d01 = L.circleMarker(
+                [35.82, -90.68],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.4, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_981d2d40b96c4e29b2adb763fa99c764 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5ef4434cc234257a666e93aecbd4e0e = $(`<div id="html_d5ef4434cc234257a666e93aecbd4e0e" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Arkansas<br><strong> Region: </strong>Jonesboro<br><strong> Count: </strong>282<br></div>`)[0];
+            popup_981d2d40b96c4e29b2adb763fa99c764.setContent(html_d5ef4434cc234257a666e93aecbd4e0e);
+        
+
+        circle_marker_9d29d1e2419d405a85d35343752e2d01.bindPopup(popup_981d2d40b96c4e29b2adb763fa99c764)
+        ;
+
+        
+    
+    
+            var circle_marker_56a25e2d1efd4bfc82229fc43802435a = L.circleMarker(
+                [38.4018, -93.785],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32.06666666666667, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_6949f3f432f44844b18d3c04d0b93ef1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5528156952e54cf7873aa42b1be361d6 = $(`<div id="html_5528156952e54cf7873aa42b1be361d6" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Arkansas<br><strong> Region: </strong>Little rock<br><strong> Count: </strong>962<br></div>`)[0];
+            popup_6949f3f432f44844b18d3c04d0b93ef1.setContent(html_5528156952e54cf7873aa42b1be361d6);
+        
+
+        circle_marker_56a25e2d1efd4bfc82229fc43802435a.bindPopup(popup_6949f3f432f44844b18d3c04d0b93ef1)
+        ;
+
+        
+    
+    
+            var circle_marker_fc90814def5d4261a828b4b437a102a8 = L.circleMarker(
+                [33.779214, -84.411811],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.533333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_1f79640797e645dcbf67df1896620963 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b4cdd07b5e143409cb083e297541095 = $(`<div id="html_7b4cdd07b5e143409cb083e297541095" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>Arkansas<br><strong> Region: </strong>Texarkana<br><strong> Count: </strong>166<br></div>`)[0];
+            popup_1f79640797e645dcbf67df1896620963.setContent(html_7b4cdd07b5e143409cb083e297541095);
+        
+
+        circle_marker_fc90814def5d4261a828b4b437a102a8.bindPopup(popup_1f79640797e645dcbf67df1896620963)
+        ;
+
+        
+    
+    
+            var circle_marker_a0ae623da4474e3bbed18552b254a336 = L.circleMarker(
+                [35.38, -119.02],
+                {"bubblingMouseEvents": true, "color": "cyan", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 55.9, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_28906ded52654a0ea5d9ea3101880c20 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0ba88ba0f1c4875b56b0eadcba8c108 = $(`<div id="html_c0ba88ba0f1c4875b56b0eadcba8c108" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>California<br><strong> Region: </strong>Bakersfield<br><strong> Count: </strong>1677<br></div>`)[0];
+            popup_28906ded52654a0ea5d9ea3101880c20.setContent(html_c0ba88ba0f1c4875b56b0eadcba8c108);
+        
+
+        circle_marker_a0ae623da4474e3bbed18552b254a336.bindPopup(popup_28906ded52654a0ea5d9ea3101880c20)
+        ;
+
+        
+    
+    
+            var circle_marker_c3a4e53ac9a245f08217557b8d81d15b = L.circleMarker(
+                [39.71, -121.81],
+                {"bubblingMouseEvents": true, "color": "cyan", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 39.96666666666667, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_13e0e97de4cf4cb39ab98afe2afaf1e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b44f34e76bf4ee393db5d8f33bafe1a = $(`<div id="html_7b44f34e76bf4ee393db5d8f33bafe1a" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>California<br><strong> Region: </strong>Chico<br><strong> Count: </strong>1199<br></div>`)[0];
+            popup_13e0e97de4cf4cb39ab98afe2afaf1e7.setContent(html_7b44f34e76bf4ee393db5d8f33bafe1a);
+        
+
+        circle_marker_c3a4e53ac9a245f08217557b8d81d15b.bindPopup(popup_13e0e97de4cf4cb39ab98afe2afaf1e7)
+        ;
+
+        
+    
+    
+            var circle_marker_9881ea5ed7ad4abd836e2b6886158b58 = L.circleMarker(
+                [33.779214, -84.411811],
+                {"bubblingMouseEvents": true, "color": "cyan", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 35.2, "stroke": true, "weight": 3}
+            ).addTo(map_c39f76f5256d474d845ef919638562aa);
+        
+    
+        var popup_164f7010781445edb547bd2813d216e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b61138659be4c4b8a5e6eef14f57ce9 = $(`<div id="html_9b61138659be4c4b8a5e6eef14f57ce9" style="width: 100.0%; height: 100.0%;"><strong> State: </strong>California<br><strong> Region: </strong>Fresno / madera<br><strong> Count: </strong>1056<br></div>`)[0];
+            popup_164f7010781445edb547bd2813d216e8.setContent(html_9b61138659be4c4b8a5e6eef14f57ce9);
+        
+
+        circle_marker_9881ea5ed7ad4abd836e2b6886158b58.bindPopup(popup_164f7010781445edb547bd2813d216e8)
+        ;
+
+        
+    
+</script>
