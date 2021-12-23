@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang='eng'>
+
+<head>
+    <meta charset = 'UTF-8'>
+    <meta name = 'viewport' content='width-device-width, initial-scale = 1.0'>
+    <link rel = 'stylesheet' href="{{ url_for('static' , filename = 'css/mystyle.css') }}" type='text/css'>
+</head>
+
+<body>
+    <div class = 'main'>
+        <div class = 'cointainer'>
+            <div class = 'top'> <h1> Used Car Valuation </h1></div>
+
+            <div class = 'bottom'>
+                <form action="{{ url_for('predict')}}" method="post" id = 'input' autocomplete="off">
+                    <div class = 'first_left'>
+                        <div class = 'first_left_col'>
+                            <label> Car Manufacturer </label><br>
+                            <select class = 'sel_option' name = 'Manufacturer' required>
+                                <option value = 'maunfacturer'> Select Manufacturer </option>
+                                <option value = 'gmc'> gmc </option>
+                                <option value = 'chevrolet'> chevrolet </option>
+                                <option value = 'toyota'> toyota </option>
+                                <option value = 'ford'> ford </option>
+                                <option value = 'jeep'> jeep </option>
+                                <option value = 'nissan'> nissan </option>
+                                <option value = 'ram'> ram </option>
+                                <option value = 'mazda'> mazda </option>
+                                <option value = 'cadillac'> cadillac </option>
+                                <option value = 'honda'> honda </option>
+                                <option value = 'dodge'> dodge </option>
+                                <option value = 'lexus'> lexus </option>
+                                <option value = 'jaguar'> jaguar </option>
+                                <option value = 'chrysler'> chrysler </option>
+                                <option value = 'volvo'> volvo </option>
+                                <option value = 'audi'> audi </option>
+                                <option value = 'infiniti'> infiniti </option>
+                                <option value = 'lincoln'> lincoln </option>
+                                <option value = 'alfa-romeo'> alfa-romeo </option>
+                                <option value = 'subaru'> subaru </option>
+                                <option value = 'acura'> acura </option>
+                                <option value = 'hyundai'> hyundai </option>
+                                <option value = 'buick'> buick </option>
+                                <option value = 'mercedes-benz'> mercedes-benz </option>
+                                <option value = 'bmw'> bmw </option>
+                                <option value = 'mitsubishi'> mitsubishi </option>
+                                <option value = 'volkswagen'> volkswagen </option>
+                                <option value = 'porsche'> porsche </option>
+                                <option value = 'kia'> kia </option>
+                                <option value = 'rover'> rover </option>
+                                <option value = 'ferrari'> ferrari </option>
+                                <option value = 'mini'> mini </option>
+                                <option value = 'pontiac'> pontiac </option>
+                                <option value = 'fiat'> fiat </option>
+                                <option value = 'tesla'> tesla </option>
+                                <option value = 'saturn'> saturn </option>
+                                <option value = 'mercury'> mercury </option>
+                                <option value = 'harley-davidson'> harley-davidson </option>
+                            </select>
+                        </div>
+
+                        <div class = 'first_left_col'>
+                            <label id = 'cond' for = 'condition'> Car Condition </label><br>
+                            <select class = 'sel_option' name = 'Condition' required>
+                                <option value = 'condition'> Select Condition </option>
+                                <option value = 'new'> new </option>
+                                <option value = 'like new'> like new </option>
+                                <option value = 'excellent'> excellent </option>
+                                <option value = 'good'> good </option>
+                                <option value = 'salvage'> salvage </option>
+                            </select>
+                        </div>
+
+                        <div class = 'first_left_col'>
+                            <label for = 'cylinders'> Number of Cylinders </label><br>
+                            <select class = 'sel_option' name = 'Cylinders' required>                    
+                                <option value = 'condition'> Select Cylinders </option>
+                                <option value = '3 cylinders'> 3 cylinders </option>
+                                <option value = '4 cylinders'> 4 cylinders </option>
+                                <option value = '5 cylinders'> 5 cylinders </option>
+                                <option value = '6 cylinders'> 6 cylinders </option>
+                                <option value = '8 cylinders'> 8 cylinders </option>
+                                <option value = '10 cylinders'> 10 cylinders </option>
+                                <option value = '12 cylinders'> 12 cylinders </option>
+                                <option value = 'other'> other </option>
+                            </select>
+                        </div>
+
+                        <div class = 'first_left_col'>
+                            <label for = 'Fuel Type'> Fuel Type </label><br>
+                            <select class = 'sel_option' name = 'Fuel Type' required>                    
+                                <option value = 'Fuel Type'> Select Fuel Type </option>
+                                <option value = 'gas'> gas </option>
+                                <option value = 'diesel'> diesel </option>
+                                <option value = 'hybrid'> hybrid </option>
+                                <option value = 'electric'> electric </option>
+                                <option value = 'other'> other </option>                                
+                            </select>
+                        </div>
+
+                        <div class = 'first_left_col'>
+                            <label for = 'distance'> Distance Travelled </label><br>
+                            <input class = 'input' name = 'Distance' placeholder = 'Enter Distance (In Miles)' required>
+                        </div>
+
+                        <div class = 'first_left_col'>
+                            <label for = 'status'> Status of Car </label><br>
+                            <select class = 'sel_option' name = 'Status' required>                    
+                                <option value = 'Status'> Select Status </option>
+                                <option value = 'clean'> clean </option>
+                                <option value = 'rebuilt'> rebuilt </option>
+                                <option value = 'lien'> lien </option>
+                                <option value = 'salvage'> salvage </option>
+                                <option value = 'missing'> missing </option>
+                                <option value = 'parts only'> other </option>                                
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class = 'first_right'>
+                        <div class = 'first_right_col'>
+                            <label for = 'transmission'> Transmission Type </label><br>
+                            <select class = 'sel_option' name = 'Transmission' required>                    
+                                <option value = 'transmission'> Select Transmission Type </option>
+                                <option value = 'manual'> manual </option>
+                                <option value = 'automatic'> automatic </option>
+                                <option value = 'other'> other </option>                            
+                            </select>
+                        </div>
+ 
+                        <div class = 'first_right_col'>
+                            <label for = 'drive'> Drive Type </label><br>
+                            <select class = 'sel_option' name = 'Drive' required>                    
+                                <option value = 'drive'> Select Drive Type </option>
+                                <option value = 'rwd'> rwd </option>
+                                <option value = '4wd'> 4wd </option>
+                                <option value = 'fwd'> fwd </option>                       
+                            </select>
+                        </div>
+
+                        <div class = 'first_right_col'>
+                            <label for = 'car type'> Car Type </label><br>
+                            <select class = 'sel_option' name = 'Car Type' required>
+                                <option value = 'car type'> Select Car Type </option>
+                                <option value = 'pickup'> pickup </option>
+                                <option value = 'coupe'> coupe </option>
+                                <option value = 'SUV'> SUV </option>
+                                <option value = 'hatchback'> hatchback </option>
+                                <option value = 'mini-van'> mini-van </option>
+                                <option value = 'sedan'> sedan </option>
+                                <option value = 'offroad'> offroad </option>
+                                <option value = 'bus'> bus </option>
+                                <option value = 'convertible'> convertible </option>
+                                <option value = 'wagon'> wagon </option>
+                                <option value = 'van'> van </option>
+                                <option value = 'truck'> truck </option>
+                                <option value = 'other'> other </option>
+                            </select>
+                        </div>
+
+                        <div class = 'first_right_col'>
+                            <label for = 'state'> State </label><br>
+                            <select class = 'sel_option' name = 'State' required>
+                                <option value = 'state'> Select State </option>
+                                <option value = 'al'> al </option>
+                                <option value = 'ak'> ak </option>
+                                <option value = 'az'> az </option>
+                                <option value = 'ar'> ar </option>
+                                <option value = 'ca'> ca </option>
+                            </select>
+                        </div>
+                        <div class = 'first_right_col'>
+                            <label class = 'label'> Year </label><br>
+                            <input name = 'Year' placeholder= "Enter Year" class = 'input' required><br><br>
+                        </div>
+                        <div class = 'first_right_col'>
+                            <input type = 'submit' value =  'Check Price' id = 'submit'>
+                        </div>
+                    </div>
+                </form>
+                <div class = 'pred'>
+                    <h3> {{ prediction_text }} </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+
+body{
+    background-image: url(../static/images/background_img.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+</style>
+</html>
